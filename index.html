@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tecno Market S.A. - Seguridad de la Información</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+         MENÚ LATERAL
+         ========================================== -->
+
+    <aside class="sidebar">
+
+        <h2>Tecno Market</h2>
+
+        <p class="subtitulo-menu">
+            Seguridad de la Información
+        </p>
+
+        <button class="menu-btn active"
+                onclick="mostrarSeccion('inicio', this)">
+            🏠 Dashboard
+        </button>
+
+        <button class="menu-btn"
+                onclick="mostrarSeccion('empresa', this)">
+            🏢 Empresa
+        </button>
+
+        <button class="menu-btn"
+                onclick="mostrarSeccion('seguridad', this)">
+            🔐 Seguridad
+        </button>
+
+        <button class="menu-btn"
+                onclick="mostrarSeccion('iso', this)">
+            📋 ISO 27001
+        </button>
+
+        <button class="menu-btn"
+                onclick="mostrarSeccion('riesgos', this)">
+            ⚠️ Gestión de Riesgos
+        </button>
+
+        <button class="menu-btn"
+                onclick="mostrarSeccion('matriz', this)">
+            📊 Matriz de Riesgos
+        </button>
+
+        <button class="menu-btn"
+                onclick="mostrarSeccion('plan', this)">
+            🛡️ Plan de Acción
+        </button>
+
+    </aside>
+
+
+    <!-- ==========================================
+         CONTENIDO PRINCIPAL
+         ========================================== -->
+
+    <main class="contenido">
+
+        <!-- ENCABEZADO -->
+
+        <header class="encabezado">
+
+            <h1 id="tituloPagina">
+                Dashboard de Seguridad
+            </h1>
+
+            <p>
+                Tecno Market S.A.
+            </p>
+
+        </header>
+
+
+        <!-- ==========================================
+             DASHBOARD
+             ========================================== -->
+
+        <section id="inicio" class="seccion activa">
+
+            <div class="bienvenida">
+
+                <h2>
+                    Bienvenido al Sistema de Seguridad
+                </h2>
+
+                <p>
+                    Este panel presenta el análisis de seguridad de la
+                    información de Tecno Market S.A., considerando sus
+                    activos tecnológicos, principios de seguridad,
+                    controles, riesgos y acciones de mitigación.
+                </p>
+
+            </div>
+
+
+            <!-- INDICADORES -->
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+                    <h3>Riesgos</h3>
+                    <span id="totalRiesgos">10</span>
+                    <p>Riesgos identificados</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Críticos</h3>
+                    <span id="totalCriticos">3</span>
+                    <p>Riesgos críticos</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Altos</h3>
+                    <span id="totalAltos">4</span>
+                    <p>Riesgos altos</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Información</h3>
+                    <span>6</span>
+                    <p>Tipos de información</p>
+                </div>
+
+            </div>
+
+
+            <!-- PRINCIPIOS CIA -->
+
+            <div class="panel">
+
+                <h2>
+                    Principios de Seguridad
+                </h2>
+
+                <div class="principios">
+
+                    <div class="principio">
+
+                        <h3>
+                            Confidencialidad
+                        </h3>
+
+                        <p>
+                            Garantiza que la información solamente sea
+                            accesible para las personas autorizadas.
+                        </p>
+
+                    </div>
+
+
+                    <div class="principio">
+
+                        <h3>
+                            Integridad
+                        </h3>
+
+                        <p>
+                            Protege la información contra modificaciones
+                            no autorizadas o alteraciones.
+                        </p>
+
+                    </div>
+
+
+                    <div class="principio">
+
+                        <h3>
+                            Disponibilidad
+                        </h3>
+
+                        <p>
+                            Permite que la información y los sistemas
+                            estén disponibles cuando sean necesarios.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESUMEN -->
+
+            <div class="panel">
+
+                <h2>
+                    Resumen de la Empresa
+                </h2>
+
+                <p>
+                    <strong>
+                        Tecno Market S.A.
+                    </strong>
+                    es una empresa dedicada a la venta de productos
+                    tecnológicos mediante una plataforma de comercio
+                    electrónico.
+                </p>
+
+                <p>
+                    Sus principales servicios incluyen la venta de
+                    computadores, celulares, accesorios y dispositivos
+                    electrónicos.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             EMPRESA
+             ========================================== -->
+
+        <section id="empresa" class="seccion">
+
+            <h2>
+                Información de la Empresa
+            </h2>
+
+
+            <div class="panel">
+
+                <h3>
+                    Tecno Market S.A.
+                </h3>
+
+                <p>
+                    Empresa dedicada a la venta de productos tecnológicos
+                    mediante una plataforma de comercio electrónico.
+                </p>
+
+                <h3>
+                    Servicios
+                </h3>
+
+                <p>
+                    Venta de computadores, celulares, accesorios y
+                    dispositivos electrónicos.
+                </p>
+
+            </div>
+
+
+            <div class="panel">
+
+                <h2>
+                    Procesos principales
+                </h2>
+
+                <div class="lista-info">
+
+                    <div class="info-item">
+                        <strong>Ventas</strong>
+                        <p>
+                            Gestión de ventas de productos tecnológicos.
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Inventario</strong>
+                        <p>
+                            Control y actualización de productos disponibles.
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Facturación</strong>
+                        <p>
+                            Registro y procesamiento de las ventas.
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Atención al cliente</strong>
+                        <p>
+                            Atención de consultas y solicitudes.
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Comercio electrónico</strong>
+                        <p>
+                            Gestión de la plataforma de ventas en línea.
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Entrega de productos</strong>
+                        <p>
+                            Gestión de pedidos y entrega a los clientes.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <h2>
+                    Activos tecnológicos principales
+                </h2>
+
+                <div class="lista-info">
+
+                    <div class="info-item">
+                        <strong>Base de datos</strong>
+                        <p>
+                            Datos de clientes, pedidos y otra información
+                            empresarial.
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>
+                            Plataforma de comercio electrónico
+                        </strong>
+                        <p>
+                            Sistema utilizado para gestionar las ventas
+                            en línea.
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Servidores</strong>
+                        <p>
+                            Infraestructura utilizada para alojar los
+                            sistemas.
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>
+                            Equipos de empleados
+                        </strong>
+                        <p>
+                            Computadores utilizados para las actividades
+                            empresariales.
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Red empresarial</strong>
+                        <p>
+                            Infraestructura de comunicación de la empresa.
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Sistema de inventario</strong>
+                        <p>
+                            Sistema utilizado para controlar los productos.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             SEGURIDAD
+             ========================================== -->
+
+        <section id="seguridad" class="seccion">
+
+            <h2>
+                Seguridad de la Información
+            </h2>
+
+
+            <div class="principios">
+
+                <div class="principio">
+
+                    <h3>
+                        Confidencialidad
+                    </h3>
+
+                    <p>
+                        Protección de datos personales, información de
+                        pagos, empleados y proveedores.
+                    </p>
+
+                </div>
+
+
+                <div class="principio">
+
+                    <h3>
+                        Integridad
+                    </h3>
+
+                    <p>
+                        Protección de los datos contra modificaciones
+                        incorrectas o no autorizadas.
+                    </p>
+
+                </div>
+
+
+                <div class="principio">
+
+                    <h3>
+                        Disponibilidad
+                    </h3>
+
+                    <p>
+                        Mantener disponibles la plataforma, sistemas,
+                        información y servicios.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <h2>
+                    Clasificación de la Información
+                </h2>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Información</th>
+                            <th>Clasificación</th>
+                            <th>Protección requerida</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Datos personales de clientes</td>
+                            <td>Confidencial</td>
+                            <td>Alta</td>
+                        </tr>
+
+                        <tr>
+                            <td>Información de pedidos</td>
+                            <td>Confidencial</td>
+                            <td>Alta</td>
+                        </tr>
+
+                        <tr>
+                            <td>Información de pagos</td>
+                            <td>Confidencial</td>
+                            <td>Muy alta</td>
+                        </tr>
+
+                        <tr>
+                            <td>Datos de empleados</td>
+                            <td>Confidencial</td>
+                            <td>Alta</td>
+                        </tr>
+
+                        <tr>
+                            <td>Información de inventario</td>
+                            <td>Interna</td>
+                            <td>Media</td>
+                        </tr>
+
+                        <tr>
+                            <td>Información de proveedores</td>
+                            <td>Interna</td>
+                            <td>Media</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <div class="panel">
+
+                <h2>
+                    Seguridad Física y Lógica
+                </h2>
+
+                <div class="principios">
+
+                    <div class="principio">
+
+                        <h3>
+                            Seguridad física
+                        </h3>
+
+                        <p>
+                            Protección de servidores, computadores,
+                            dispositivos de red y demás equipos
+                            tecnológicos.
+                        </p>
+
+                    </div>
+
+
+                    <div class="principio">
+
+                        <h3>
+                            Seguridad lógica
+                        </h3>
+
+                        <p>
+                            Uso de contraseñas seguras, autenticación,
+                            permisos, antivirus, respaldos y controles
+                            de acceso.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             ISO 27001
+             ========================================== -->
+
+        <section id="iso" class="seccion">
+
+            <h2>
+                ISO/IEC 27001
+            </h2>
+
+            <div class="panel">
+
+                <h3>
+                    Aplicación de buenas prácticas de seguridad
+                </h3>
+
+                <p>
+                    Tecno Market S.A. puede aplicar principios y controles
+                    de seguridad de la información para proteger sus
+                    activos y reducir los riesgos identificados.
+                </p>
+
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Control</th>
+                            <th>Aplicación en Tecno Market</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Control de acceso</td>
+                            <td>
+                                Limitar el acceso a la información según
+                                las funciones de cada empleado.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Gestión de contraseñas</td>
+                            <td>
+                                Utilizar contraseñas seguras y autenticación
+                                multifactor.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Copias de seguridad</td>
+                            <td>
+                                Realizar respaldos periódicos de la
+                                información importante.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Protección contra malware</td>
+                            <td>
+                                Mantener antivirus y sistemas actualizados.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Gestión de incidentes</td>
+                            <td>
+                                Establecer procedimientos para responder
+                                ante incidentes de seguridad.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Continuidad</td>
+                            <td>
+                                Contar con mecanismos alternativos para
+                                mantener los servicios críticos.
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             GESTIÓN DE RIESGOS
+             ========================================== -->
+
+        <section id="riesgos" class="seccion">
+
+            <h2>
+                Gestión de Riesgos
+            </h2>
+
+
+            <div class="panel">
+
+                <h3>
+                    Riesgos identificados en Tecno Market S.A.
+                </h3>
+
+                <p>
+                    Se identificaron 10 riesgos relacionados con los
+                    sistemas, información, procesos y activos tecnológicos
+                    de la empresa.
+                </p>
+
+
+                <div class="filtros">
+
+                    <label for="filtroRiesgo">
+                        Filtrar por nivel:
+                    </label>
+
+                    <select id="filtroRiesgo"
+                            onchange="filtrarRiesgos()">
+
+                        <option value="Todos">
+                            Todos
+                        </option>
+
+                        <option value="Crítico">
+                            Crítico
+                        </option>
+
+                        <option value="Alto">
+                            Alto
+                        </option>
+
+                        <option value="Medio">
+                            Medio
+                        </option>
+
+                        <option value="Bajo">
+                            Bajo
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <table id="tablaRiesgos">
+
+                    <thead>
+
+                        <tr>
+                            <th>Código</th>
+                            <th>Riesgo identificado</th>
+                            <th>Probabilidad</th>
+                            <th>Impacto</th>
+                            <th>Nivel de riesgo</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr data-nivel="Crítico">
+                            <td>R01</td>
+                            <td>
+                                Acceso no autorizado a la base de datos
+                            </td>
+                            <td>Alta</td>
+                            <td>Alto</td>
+                            <td>
+                                <strong>Crítico</strong>
+                            </td>
+                        </tr>
+
+
+                        <tr data-nivel="Alto">
+                            <td>R02</td>
+                            <td>
+                                Pérdida de información por fallo del servidor
+                            </td>
+                            <td>Media</td>
+                            <td>Alto</td>
+                            <td>
+                                <strong>Alto</strong>
+                            </td>
+                        </tr>
+
+
+                        <tr data-nivel="Crítico">
+                            <td>R03</td>
+                            <td>
+                                Caída de la plataforma de comercio electrónico
+                            </td>
+                            <td>Alta</td>
+                            <td>Alto</td>
+                            <td>
+                                <strong>Crítico</strong>
+                            </td>
+                        </tr>
+
+
+                        <tr data-nivel="Crítico">
+                            <td>R04</td>
+                            <td>
+                                Robo de credenciales de empleados
+                            </td>
+                            <td>Alta</td>
+                            <td>Alto</td>
+                            <td>
+                                <strong>Crítico</strong>
+                            </td>
+                        </tr>
+
+
+                        <tr data-nivel="Alto">
+                            <td>R05</td>
+                            <td>
+                                Infección por malware o ransomware
+                            </td>
+                            <td>Media</td>
+                            <td>Alto</td>
+                            <td>
+                                <strong>Alto</strong>
+                            </td>
+                        </tr>
+
+
+                        <tr data-nivel="Medio">
+                            <td>R06</td>
+                            <td>
+                                Modificación no autorizada del inventario
+                            </td>
+                            <td>Media</td>
+                            <td>Medio</td>
+                            <td>
+                                <strong>Medio</strong>
+                            </td>
+                        </tr>
+
+
+                        <tr data-nivel="Alto">
+                            <td>R07</td>
+                            <td>
+                                Fuga de información por empleados
+                            </td>
+                            <td>Media</td>
+                            <td>Alto</td>
+                            <td>
+                                <strong>Alto</strong>
+                            </td>
+                        </tr>
+
+
+                        <tr data-nivel="Medio">
+                            <td>R08</td>
+                            <td>
+                                Fallo de conexión a Internet
+                            </td>
+                            <td>Alta</td>
+                            <td>Medio</td>
+                            <td>
+                                <strong>Medio</strong>
+                            </td>
+                        </tr>
+
+
+                        <tr data-nivel="Bajo">
+                            <td>R09</td>
+                            <td>
+                                Daño físico de equipos tecnológicos
+                            </td>
+                            <td>Baja</td>
+                            <td>Medio</td>
+                            <td>
+                                <strong>Bajo</strong>
+                            </td>
+                        </tr>
+
+
+                        <tr data-nivel="Alto">
+                            <td>R10</td>
+                            <td>
+                                Compromiso de la pasarela de pagos
+                            </td>
+                            <td>Media</td>
+                            <td>Alto</td>
+                            <td>
+                                <strong>Alto</strong>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             MATRIZ DE RIESGOS
+             ========================================== -->
+
+        <section id="matriz" class="seccion">
+
+            <h2>
+                Matriz de Riesgos
+            </h2>
+
+
+            <div class="panel">
+
+                <h3>
+                    Mapa de Riesgos
+                </h3>
+
+                <p>
+                    La matriz relaciona la probabilidad de ocurrencia
+                    con el impacto que podría generar cada riesgo sobre
+                    la empresa.
+                </p>
+
+
+                <!-- LEYENDA -->
+
+                <div class="leyenda-riesgos">
+
+                    <div class="leyenda-item critico">
+                        <span></span>
+                        Crítico
+                    </div>
+
+                    <div class="leyenda-item alto">
+                        <span></span>
+                        Alto
+                    </div>
+
+                    <div class="leyenda-item medio">
+                        <span></span>
+                        Medio
+                    </div>
+
+                    <div class="leyenda-item bajo">
+                        <span></span>
+                        Bajo
+                    </div>
+
+                </div>
+
+
+                <!-- MATRIZ -->
+
+                <div class="matriz-contenedor">
+
+                    <table class="matriz-riesgos">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Probabilidad ↓ / Impacto →
+                                </th>
+
+                                <th>
+                                    Bajo
+                                </th>
+
+                                <th>
+                                    Medio
+                                </th>
+
+                                <th>
+                                    Alto
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <!-- ALTA -->
+
+                            <tr>
+
+                                <th>
+                                    Alta
+                                </th>
+
+                                <td class="nivel-medio">
+
+                                    <span>
+                                        Medio
+                                    </span>
+
+                                </td>
+
+
+                                <td class="nivel-alto">
+
+                                    <span>
+                                        Alto
+                                    </span>
+
+                                    <small>
+                                        R08
+                                    </small>
+
+                                </td>
+
+
+                                <td class="nivel-critico">
+
+                                    <span>
+                                        Crítico
+                                    </span>
+
+                                    <small>
+                                        R01 · R03 · R04
+                                    </small>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- MEDIA -->
+
+                            <tr>
+
+                                <th>
+                                    Media
+                                </th>
+
+
+                                <td class="nivel-bajo">
+
+                                    <span>
+                                        Bajo
+                                    </span>
+
+                                </td>
+
+
+                                <td class="nivel-medio">
+
+                                    <span>
+                                        Medio
+                                    </span>
+
+                                    <small>
+                                        R06
+                                    </small>
+
+                                </td>
+
+
+                                <td class="nivel-alto">
+
+                                    <span>
+                                        Alto
+                                    </span>
+
+                                    <small>
+                                        R02 · R05 · R07 · R10
+                                    </small>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- BAJA -->
+
+                            <tr>
+
+                                <th>
+                                    Baja
+                                </th>
+
+
+                                <td class="nivel-bajo">
+
+                                    <span>
+                                        Bajo
+                                    </span>
+
+                                </td>
+
+
+                                <td class="nivel-bajo">
+
+                                    <span>
+                                        Bajo
+                                    </span>
+
+                                    <small>
+                                        R09
+                                    </small>
+
+                                </td>
+
+
+                                <td class="nivel-medio">
+
+                                    <span>
+                                        Medio
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESUMEN -->
+
+            <div class="panel">
+
+                <h3>
+                    Resumen de la Matriz
+                </h3>
+
+
+                <div class="resumen-matriz">
+
+                    <div class="resumen riesgo-critico">
+
+                        <strong>
+                            3
+                        </strong>
+
+                        <span>
+                            Riesgos críticos
+                        </span>
+
+                        <small>
+                            R01 · R03 · R04
+                        </small>
+
+                    </div>
+
+
+                    <div class="resumen riesgo-alto">
+
+                        <strong>
+                            4
+                        </strong>
+
+                        <span>
+                            Riesgos altos
+                        </span>
+
+                        <small>
+                            R02 · R05 · R07 · R10
+                        </small>
+
+                    </div>
+
+
+                    <div class="resumen riesgo-medio">
+
+                        <strong>
+                            2
+                        </strong>
+
+                        <span>
+                            Riesgos medios
+                        </span>
+
+                        <small>
+                            R06 · R08
+                        </small>
+
+                    </div>
+
+
+                    <div class="resumen riesgo-bajo">
+
+                        <strong>
+                            1
+                        </strong>
+
+                        <span>
+                            Riesgo bajo
+                        </span>
+
+                        <small>
+                            R09
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             PLAN DE ACCIÓN
+             ========================================== -->
+
+        <section id="plan" class="seccion">
+
+            <h2>
+                Plan de Acción
+            </h2>
+
+
+            <div class="panel">
+
+                <h3>
+                    Acciones de mitigación
+                </h3>
+
+                <p>
+                    El plan de acción establece los controles y medidas
+                    de mitigación necesarios para reducir los riesgos
+                    identificados en Tecno Market S.A.
+                </p>
+
+
+                <div class="filtros">
+
+                    <label for="filtroPrioridad">
+                        Filtrar por prioridad:
+                    </label>
+
+                    <select id="filtroPrioridad"
+                            onchange="filtrarPlan()">
+
+                        <option value="Todas">
+                            Todas
+                        </option>
+
+                        <option value="Alta">
+                            Alta
+                        </option>
+
+                        <option value="Media">
+                            Media
+                        </option>
+
+                        <option value="Baja">
+                            Baja
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <table id="tablaPlan">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Riesgo identificado
+                            </th>
+
+                            <th>
+                                Control propuesto
+                            </th>
+
+                            <th>
+                                Acción de mitigación
+                            </th>
+
+                            <th>
+                                Prioridad
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr data-prioridad="Alta">
+
+                            <td>
+                                Acceso no autorizado
+                            </td>
+
+                            <td>
+                                Autenticación multifactor
+                            </td>
+
+                            <td>
+                                Implementar MFA para los accesos
+                                a sistemas críticos.
+                            </td>
+
+                            <td>
+                                <strong>Alta</strong>
+                            </td>
+
+                        </tr>
+
+
+                        <tr data-prioridad="Alta">
+
+                            <td>
+                                Pérdida de información
+                            </td>
+
+                            <td>
+                                Copias de seguridad
+                            </td>
+
+                            <td>
+                                Realizar respaldos periódicos y
+                                verificar su recuperación.
+                            </td>
+
+                            <td>
+                                <strong>Alta</strong>
+                            </td>
+
+                        </tr>
+
+
+                        <tr data-prioridad="Alta">
+
+                            <td>
+                                Caída del comercio electrónico
+                            </td>
+
+                            <td>
+                                Continuidad
+                            </td>
+
+                            <td>
+                                Implementar mecanismos alternativos
+                                para mantener el servicio.
+                            </td>
+
+                            <td>
+                                <strong>Alta</strong>
+                            </td>
+
+                        </tr>
+
+
+                        <tr data-prioridad="Alta">
+
+                            <td>
+                                Robo de credenciales
+                            </td>
+
+                            <td>
+                                Autenticación
+                            </td>
+
+                            <td>
+                                Utilizar MFA y capacitar al personal
+                                sobre credenciales.
+                            </td>
+
+                            <td>
+                                <strong>Alta</strong>
+                            </td>
+
+                        </tr>
+
+
+                        <tr data-prioridad="Alta">
+
+                            <td>
+                                Malware o ransomware
+                            </td>
+
+                            <td>
+                                Antimalware
+                            </td>
+
+                            <td>
+                                Mantener sistemas actualizados y utilizar
+                                protección antimalware.
+                            </td>
+
+                            <td>
+                                <strong>Alta</strong>
+                            </td>
+
+                        </tr>
+
+
+                        <tr data-prioridad="Media">
+
+                            <td>
+                                Modificación del inventario
+                            </td>
+
+                            <td>
+                                Control de acceso
+                            </td>
+
+                            <td>
+                                Aplicar permisos de acuerdo con las
+                                funciones de cada usuario.
+                            </td>
+
+                            <td>
+                                <strong>Media</strong>
+                            </td>
+
+                        </tr>
+
+
+                        <tr data-prioridad="Media">
+
+                            <td>
+                                Fuga de información
+                            </td>
+
+                            <td>
+                                Capacitación
+                            </td>
+
+                            <td>
+                                Capacitar al personal sobre protección
+                                y manejo de información.
+                            </td>
+
+                            <td>
+                                <strong>Media</strong>
+                            </td>
+
+                        </tr>
+
+
+                        <tr data-prioridad="Media">
+
+                            <td>
+                                Fallo de Internet
+                            </td>
+
+                            <td>
+                                Conectividad secundaria
+                            </td>
+
+                            <td>
+                                Contar con una conexión alternativa
+                                para servicios críticos.
+                            </td>
+
+                            <td>
+                                <strong>Media</strong>
+                            </td>
+
+                        </tr>
+
+
+                        <tr data-prioridad="Baja">
+
+                            <td>
+                                Daño de equipos
+                            </td>
+
+                            <td>
+                                Seguridad física
+                            </td>
+
+                            <td>
+                                Utilizar UPS y medidas de protección
+                                para los equipos.
+                            </td>
+
+                            <td>
+                                <strong>Baja</strong>
+                            </td>
+
+                        </tr>
+
+
+                        <tr data-prioridad="Alta">
+
+                            <td>
+                                Compromiso de la pasarela de pagos
+                            </td>
+
+                            <td>
+                                Monitoreo
+                            </td>
+
+                            <td>
+                                Supervisar transacciones, accesos
+                                y actividades sospechosas.
+                            </td>
+
+                            <td>
+                                <strong>Alta</strong>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             PIE DE PÁGINA
+             ========================================== -->
+
+        <footer>
+
+            <p>
+                Tecno Market S.A. | Seguridad de la Información
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
